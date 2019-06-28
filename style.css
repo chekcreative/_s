@@ -820,7 +820,7 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
-# Custom
+# Chek Creative Customizations to _s
 --------------------------------------------------------------*/
 #page {
   min-height: 100vh;
@@ -828,6 +828,38 @@ object {
   flex-direction: column; }
 
 #content {
-  flex: 1  auto; }
+  flex: 1; }
+
+/*--------------------------------------------------------------
+# Chek Creative Default standard scss files to populate
+--------------------------------------------------------------*/
+/*
+*
+* All COLOR variables from Sketch template, etc. should be declared here.
+*
+* EXAMPLE: $gray: #aeaeae;
+*
+*/
+/*
+*
+* All FONTS variables from Sketch template, etc. should be declared here.
+*
+* EXAMPLE: $gotham: 'Gotham A', 'Gotham B', 'Gotham', sans-serif;
+*
+*/
+/*
+*
+* All COMPONENTS from Sketch template, etc. should be declared here.
+*
+* EXAMPLE: 
+* .primary-button {
+*   font: $gotham;
+*   color: $white;
+* }
+*
+*/
+/*--------------------------------------------------------------
+# Chek Creative custom files for the custom theme being developed
+--------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

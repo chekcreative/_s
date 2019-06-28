@@ -107,6 +107,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 /*--------------------------------------------------------------
-# Custom
+# Chek Creative Customizations to _s
 --------------------------------------------------------------*/
-@import "custom/holy-grail";
+@import "chek_s/holy-grail";
+
+/*--------------------------------------------------------------
+# Chek Creative Default standard scss files to populate
+--------------------------------------------------------------*/
+@import "chek_standards/colors";
+@import "chek_standards/fonts";
+@import "chek_standards/components";
+
+/*--------------------------------------------------------------
+# Chek Creative custom files for the custom theme being developed
+--------------------------------------------------------------*/
+// @import "chek_custom/...";
