@@ -10,4 +10,9 @@ After cloning/forking/downloading the theme, you will need to manually set the t
 
 Adjustments From `_s` Base
 ---------------
-- 6.28.2019: Added flexbox holy grail styling to stick footer to bottom.
+- 6.28.2019:
+  - Added flexbox holy grail styling to stick footer to bottom.
+  - Configured Chek Creative default `.scss` files
+  - Imported Bootstrap.
+  - Configured `.gitignore`.
+            
