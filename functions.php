@@ -165,3 +165,44 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Customizing Login Page
+ */
+function custom_login_logo() { ?>
+	<!-- SET THE PATH TO LOGO BELOW, THEN UN-COMMENT THE BLOCK -->
+    <!-- <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/path/to/image);
+			height:65px;
+			width:320px;
+			background-size: contain;
+			background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+	</style> -->
+<?php }
+function custom_loginlogo_url($url) {
+	// SET THE CLIENT'S URL HERE
+    return 'https://chekcreative.com';
+}
+function chek_creative_footer() {
+	echo '<div style="display: flex;
+						flex-direction: column;
+						align-items: center;">';
+	echo '<div id="chek-creative-footer" style="text-align: center; 
+												display: flex;
+												padding: 0px 20px;
+												align-items: center;
+												margin-bottom: 40px;
+												width: 280px;">';
+	echo '<img height="14px" src="' . get_stylesheet_directory_uri() . '/images/chek-creative-branding/chek-creative-logo.png"><p style="margin-left: 8px; white-space: nowrap;">Powered by <a href="https://chekcreative.com" target="_blank">Chek Creative</a></p>';
+	echo '</div>';
+	echo '</div>';
+ }
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+add_action( 'login_enqueue_scripts', 'custom_login_logo' );
+add_action( 'login_footer', 'chek_creative_footer' );
+
+
+
