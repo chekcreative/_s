@@ -105,6 +105,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
+/*--------------------------------------------------------------
+# Bootstrap import
+--------------------------------------------------------------*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 /*--------------------------------------------------------------
 # Chek Creative Customizations to _s

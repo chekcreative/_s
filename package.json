@@ -1,0 +1,22 @@
+{
+  "name": "chek_s",
+  "version": "1.0.0",
+  "description": "Chek Creative skeleton theme for custom Wordpress theme dev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chekcreative/chek_s.git"
+  },
+  "author": "Chek Creative",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chekcreative/chek_s/issues"
+  },
+  "homepage": "https://github.com/chekcreative/chek_s#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
