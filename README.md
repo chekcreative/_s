@@ -16,4 +16,5 @@ Adjustments From `_s` Base
   - Configured Chek Creative default `.scss` files
   - Imported Bootstrap.
   - Configured `.gitignore`.
+  - Customized Wordpress Admin login page.
             
