@@ -8423,7 +8423,7 @@ a.text-dark:hover, a.text-dark:focus {
   flex-direction: column; }
 
 #content {
-  flex: 1; }
+  flex-grow: 1; }
 
 /*--------------------------------------------------------------
 # Chek Creative Default standard scss files to populate

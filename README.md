@@ -17,6 +17,9 @@ Adjustments From `_s` Base
   - Imported Bootstrap
   - Configured `.gitignore`
   - Customized Wordpress Admin login page
+
+- 7.11.2019
+  - Updated holy grail scss to support IE
             
 Theme Launch Checklist
 ---------------
