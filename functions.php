@@ -204,5 +204,10 @@ add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 add_action( 'login_enqueue_scripts', 'custom_login_logo' );
 add_action( 'login_footer', 'chek_creative_footer' );
 
+add_filter( 'nav_menu_link_attributes', 'wpse156165_menu_add_class', 10, 3 );
 
-
+function wpse156165_menu_add_class( $atts, $item, $args ) {
+    $class = 'nav-link'; // or something based on $item
+    $atts['class'] = $class;
+    return $atts;
+}

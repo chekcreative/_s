@@ -30,6 +30,11 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php // add javascript ?>
+<script src="<?php echo get_theme_file_uri('node_modules/jquery/dist/jquery.min.js'); ?>"></script>
+<script src="<?php echo get_theme_file_uri('node_modules/popper.js/dist/popper.min.js'); ?>"></script>
+<script src="<?php echo get_theme_file_uri('node_modules/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+
 <?php wp_footer(); ?>
 
 </body>
