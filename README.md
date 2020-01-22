@@ -20,6 +20,9 @@ Adjustments From `_s` Base
 
 - 7.11.2019
   - Updated holy grail scss to support IE
+
+- 1.22.2020
+  - Added class `visually-hidden-label` to `components.scss`
             
 Theme Launch Checklist
 ---------------
