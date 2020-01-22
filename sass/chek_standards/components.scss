@@ -9,3 +9,21 @@
 * }
 *
 */
+
+// =======================================================================================
+// =======================================================================================
+// =======================================================================================
+
+// to be used for labels in places where the design calls for placeholder only
+// we still need to include the label for accessibility purposes, but hide it from display
+// more here: https://www.w3.org/WAI/tutorials/forms/labels/#note-on-hiding-elements
+.visually-hidden-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
