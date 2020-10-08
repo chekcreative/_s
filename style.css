@@ -813,11 +813,6 @@ a:hover, a:active {
   display: block;
 }
 
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
   display: none;
 }
@@ -10623,8 +10618,12 @@ h3 {
 /*
 *
 * All COLOR variables from Sketch template, etc. should be declared here.
+* These should be named with both respect to the color AND which elements they will be used as in the code. See below.
 *
-* EXAMPLE: $gray: #aeaeae;
+* EXAMPLE: 
+* $gray: #aeaeae;
+* $borders: $gray; // use this for all input borders and HRs
+* $gray-text: $gray; // use this only on text elements
 *
 */
 /*
@@ -10658,6 +10657,9 @@ h3 {
 
 /*--------------------------------------------------------------
 # Chek Creative custom files for the custom theme being developed
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Chek Creative custom block files for the custom theme being developed
 --------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
