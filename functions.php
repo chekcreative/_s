@@ -182,13 +182,34 @@ add_filter( 'nav_menu_link_attributes', 'menu_add_class', 10, 3 );\
  */
 add_action('acf/init', 'chek_s_blocks_init');
 function chek_s_blocks_init() {
-  // Newsletter Signup for Bitefull Box landing page
+  // Examplep for chek_s theme
   acf_register_block_type(array(
     'name'              => 'chek_s-exampleblock',
-    'title'             => __('Bitefull Box: Newsletter Signup'),
-    'description'       => __('A custom Newsletter Signup block.'),
+    'title'             => __('chek_s: Example '),
+    'description'       => __('A custom Example block.'),
     'render_template'   => 'template-parts/blocks/chek_s-exampleblock/chek_s-exampleblock.php',
     'enqueue_script'    => get_template_directory_uri() . '/template-parts/blocks/chek_s-exampleblock/chek_s-exampleblock.js',
     'category'          => 'layout',
   ));
 };
+
+/*
+ * Add ACF Sync
+ */
+add_filter('acf/settings/save_json', 'chek_s_acf_json_save_point');
+function chek_s_acf_json_save_point( $path ) {
+	// update path
+	$path = get_stylesheet_directory() . '/acf-json';
+	// return
+	return $path; 
+}
+add_filter('acf/settings/load_json', 'chek_s_acf_json_load_point');
+
+function chek_s_acf_json_load_point( $paths ) {
+  // remove original path (optional)
+  unset($paths[0]);
+  // append path
+  $paths[] = get_stylesheet_directory() . '/acf-json';
+  // return
+  return $paths;  
+}
